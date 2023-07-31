@@ -1,0 +1,243 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #D9D9D9;
+  list-style: none;
+  text-decoration: dashed;
+}
+body {
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  background: #1E1E1E;
+}
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #121212c9;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.445);
+  z-index: 1000;
+  
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  overflow: hidden;
+}
+.logo .menu-icon {
+  color:  #D9D9D9;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color:  #D9D9D9;
+  font-size: 22px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #1b1717d5;
+  backdrop-filter: blur(10px);
+  transition: all .5s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #3E3636;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #D9D9D9;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.capa{
+   width: 100%;
+   height: 700px;
+   position: relative;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   overflow: hidden;
+   border-radius: 0px 0px 20px 20px;
+}
+.capa span{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    display: grid;
+   place-content: center;
+}
+.divisão{
+    position: absolute;
+    background:linear-gradient(transparent,#1E1E1E);
+    width: 100%;
+    height: 10rem;
+    bottom: -30px;
+    z-index: 10;
+}
+.capa .text{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: #0000009a;
+    font-size: 20px;
+}
+.capa .img img{
+    width: 50%;
+}
+.capa .text .element{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   align-items: center;
+}
+.capa .text .element p{
+    font-size: 30px;
+}
+.capa .text a{
+    padding: .5rem;
+    font-size: 20px;
+   width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #C33633;
+    z-index: 2;
+}
+.capa .text a::before{
+    position: absolute;
+    content:"";
+    background-color:#C33633;
+    height: 500px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 500px;
+    z-index: -1;
+    transform:translateY(100px);
+   
+}
+.capa .text a:hover{
+    border:transparent;
+}
+.capa .text a:hover::before{
+   transform:translateY(0px);
+   transition:.2s ease;
+   
+}
+main .funcionalidades{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .funcionalidades .icons{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+}
+.sobre{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 950px){
+    .capa{
+        height: 400px;
+    }
+    .capa span{
+        width: 200%;
+    }
+    .capa .text .element p,h1,a{
+        font-size: 20px;
+    }
+    .capa .text .element a{
+        width: 50%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .capa .img img{
+        width: 20%;
+    }
+    .logo .logo-name{
+        font-size: 15px;
+    }
+}
