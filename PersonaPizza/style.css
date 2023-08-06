@@ -15,6 +15,7 @@ body {
   height: 100vh;
   width: 100%;
   background: #1E1E1E;
+  
 }
 /* navbar */
 nav {
@@ -116,7 +117,11 @@ nav.open ~ .overlay {
 }
 main{
     width: 100%;
+    overflow-x: hidden;
     height: 100vh;
+}
+.titles{
+  font-size: 30px;
 }
 .capa{
    width: 100%;
@@ -127,6 +132,9 @@ main{
   align-items: center;
    overflow: hidden;
    border-radius: 0px 0px 20px 20px;
+}
+.title{
+  font-size: 30px;
 }
 .capa span{
     position: absolute;
@@ -202,23 +210,80 @@ main .funcionalidades{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+}
+.funcionalidades::after{
+  content:"";
+  background:#272727;
+  height: 600px;
+  width: 3000px;
+  position: absolute;
+  z-index: -3;
+  transform: rotate(-12deg);
+}
+.funcionalidades::before{
+  content:"";
+  background:#C33633;
+  height: 20px;
+  width:3000px;
+  z-index: -2;
+  position: absolute;
+  transform: rotate(-12deg) translateY(300px);
 }
 main .funcionalidades .icons{
   width: 100%;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
 }
-.sobre{
-  width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.icons div{
+  padding: 1rem;
+  background: #241f1f;
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px #00000033;
 }
+.icons div::before{
+  position: absolute;
+  content:'';
+  background: #C33633;
+  width: 5px;
+  height: 200px;
+  transform: translateY(-10px) translateX(-20px);
+  z-index: 10;
+  border-radius: 10px;
+}
+.sobre{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+  height: auto;
+  gap: 10px;
+}
+.sobre div{
+  width: 50%;
+  overflow: hidden;
+}
+.sobre div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+.sobre div:nth-child(2){
+display: flex;
+flex-direction:column;
+width: 600px;
+gap: 10px;
+font-size: 20px;
+justify-content: center;
+}
+
 @media (max-width: 950px){
     .capa{
         height: 400px;

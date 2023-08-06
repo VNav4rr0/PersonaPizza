@@ -1,123 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PersonaPizza</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-  <title>PersonaPizza</title>
-</head>
-
-<body>
-  <!-- SideBar -->
-  <nav>
-    <div class="logo">
-      <i class="bx bx-menu menu-icon"></i>
-      <span class="logo-name">Menu</span>
-    </div>
-    <div class="sidebar">
+  <body>
+    <!-- SideBar -->
+    <nav>
       <div class="logo">
-        <i class="bx bx-arrow-back menu-icon"></i>
-        <span class="logo-name">Voltar</span>
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Menu</span>
       </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-arrow-back menu-icon"></i>
+          <span class="logo-name">Voltar</span>
+        </div>
 
-      <div class="sidebar-content">
-        <ul class="lists">
-          <li class="list">
-            <a href="index.html" class="nav-link">
-              <i class="bx bx-home-alt icon"></i>
-              <span class="link">Home</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-user icon"></i>
-              <span class="link">Conta</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-category icon"></i>
-              <span class="link">Cardápio</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-cart icon"></i>
-              <span class="link">Carrinho</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-message-square-dots icon"></i>
-              <span class="link">Blog</span>
-            </a>
-          </li>
-        </ul>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-user icon"></i>
+                <span class="link">Conta</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-category icon"></i>
+                <span class="link">Cardápio</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cart icon"></i>
+                <span class="link">Carrinho</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-message-square-dots icon"></i>
+                <span class="link">Blog</span>
+              </a>
+            </li>
+          </ul>
 
-        <div class="bottom-cotent">
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-log-out icon" style="color: #D9D9D9;"></i>
-              <span class="link" style="color: #D9D9D9;">Logout</span>
-            </a>
-          </li>
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon" style="color: #d9d9d9"></i>
+                <span class="link" style="color: #d9d9d9">Logout</span>
+              </a>
+            </li>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <section class="overlay"></section> <!-- fundo escuro -->
-  <main>
-    <div class="capa">
-      <span><video src="img/pizza_-_80139 (1080p).mp4" width="100%" autoplay muted loop data-aos="zoom-out-down"
-          data-aos-duration="2000"></video></span>
-      <span class="divisão"></span>
-      <div class="text">
-        <div class="img" style="text-align: center; overflow: hidden;"><img src="img/logo.svg" alt="" data-aos="fade-up"
-            data-aos-delay="1000"></div>
-        <div class="element">
-          <h1 data-aos="fade-down" data-aos-delay="1000">PersonaPizza</h1>
-          <p data-aos="fade-down" data-aos-delay="1000">Personalize <strong>suas Pizzas</strong></p>
-          <a data-aos="fade-down" data-aos-delay="1000" href="login">Começar</a>
+    </nav>
+    <section class="overlay"></section>
+    <!-- fundo escuro -->
+    <main>
+      <div class="capa">
+        <span
+          ><video
+            src="img/pizza_-_80139 (1080p).mp4"
+            width="100%"
+            autoplay
+            muted
+            loop
+            data-aos="zoom-out-down"
+            data-aos-duration="2000"
+          ></video
+        ></span>
+        <span class="divisão"></span>
+        <div class="text">
+          <div class="img" style="text-align: center; overflow: hidden">
+            <img
+              src="img/logo.svg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            />
+          </div>
+          <div class="element">
+            <h1 data-aos="fade-down" data-aos-delay="1000">PersonaPizza</h1>
+            <p data-aos="fade-down" data-aos-delay="1000">
+              Personalize <strong>suas Pizzas</strong>
+            </p>
+            <a data-aos="fade-down" data-aos-delay="1000" href="login"
+              >Começar</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="funcionalidades">
-      <h1>Funcionamentos</h1>
-      <div class="icons">
-        <div>
-          <lord-icon src="https://cdn.lordicon.com/hqrgkqvs.json" trigger="loop" delay="1500"
-            colors="outline:#000000,primary:#e83a30,secondary:#ebe6ef" style="width:150px;height:150px">
-          </lord-icon>
-        </div>
-        <div>
-          <lord-icon src="https://cdn.lordicon.com/swvqwdea.json" trigger="loop" delay="1500"
-            colors="outline:#181730,primary:#e83a30,secondary:#ffc738" style="width:150px;height:150px">
-          </lord-icon>
-        </div>
-        <div>
-          <lord-icon src="https://cdn.lordicon.com/kejpvrvr.json" trigger="loop" delay="1500"
-            colors="primary:#121331,secondary:#ffc738,tertiary:#e83a30,quaternary:#ffffff,quinary:#000000"
-            style="width:150px;height:150px">
-          </lord-icon>
-        </div>
-        <div>
-          <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="loop" delay="1500"
-            colors="primary:#000000,secondary:#e83a30" style="width:150px;height:150px">
-          </lord-icon>
+      <div class="funcionalidades">
+        <h1 class="titles">Funcionamentos</h1>
+        <div class="icons">
+          <div>
+            <lord-icon
+              src="https://cdn.lordicon.com/hqrgkqvs.json"
+              trigger="loop"
+              delay="1500"
+              colors="outline:#000000,primary:#e83a30,secondary:#ebe6ef"
+              style="width: 150px; height: 150px"
+            >
+            </lord-icon>
+            <p>ww</p>
+          </div>
+          <div>
+            <lord-icon
+              src="https://cdn.lordicon.com/swvqwdea.json"
+              trigger="loop"
+              delay="1500"
+              colors="outline:#181730,primary:#e83a30,secondary:#ffc738"
+              style="width: 150px; height: 150px"
+            >
+            </lord-icon>
+            <p>ww</p>
+          </div>
+          <div>
+            <lord-icon
+              src="https://cdn.lordicon.com/kejpvrvr.json"
+              trigger="loop"
+              delay="1500"
+              colors="primary:#121331,secondary:#ffc738,tertiary:#e83a30,quaternary:#ffffff,quinary:#000000"
+              style="width: 150px; height: 150px"
+            >
+            </lord-icon>
+            <p>ww</p>
+          </div>
+          <div>
+            <lord-icon
+              src="https://cdn.lordicon.com/fihkmkwt.json"
+              trigger="loop"
+              delay="1500"
+              colors="primary:#000000,secondary:#e83a30"
+              style="width: 150px; height: 150px"
+            >
+            
+            </lord-icon>
+            <p>ww</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="sobre">
-      <h1>Sobre nós</h1>
-    </div>
-  </main>
-</body>
-
+      <section class="sobre">
+        <div>
+          <img src="img/pizza-sharing-not-css 1.svg" alt="" width="100%" >
+        </div>
+        <div>
+          <h1 class="titles">Sobre nós</h1>
+          <p>
+            A Pizzaria possui o intuito de transmitir aos clientes a opção de criar e personalizae suas próprias pizzas. Além de gerar uma competividade entre os usúarios, dando a oportunidade de ganhar bônus. 
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
 <script>
   const navBar = document.querySelector("nav"),
@@ -133,7 +186,6 @@
   overlay.addEventListener("click", () => {
     navBar.classList.remove("open");
   });
-
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
